@@ -1,0 +1,66 @@
+.svg#freepik_stories-working-from-anywhere:not(.animated) .animable {
+  opacity: 0;
+}
+
+svg#freepik_stories-working-from-anywhere.animated #freepik--background-complete--inject-1 {
+  animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideUp;
+  animation-delay: 0s;
+}
+
+svg#freepik_stories-working-from-anywhere.animated #freepik--Tree--inject-1 {
+  animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideUp;
+  animation-delay: 0.5s;
+  opacity: 0
+}
+
+svg#freepik_stories-working-from-anywhere.animated #freepik--Stone--inject-1 {
+  animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideUp;
+  animation-delay: 1.0s;
+  opacity: 0
+}
+
+svg#freepik_stories-working-from-anywhere.animated #freepik--Character--inject-1 {
+  animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) slideDown, 3s Infinite linear floating;
+  animation-delay: 1s, 2s;
+  opacity: 0
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: inherit;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floating {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.animator-hidden {
+  display: none;
+}
